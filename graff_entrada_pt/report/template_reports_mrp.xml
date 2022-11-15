@@ -36,13 +36,13 @@
                   <tr>
                     <th  style="border:1px solid black; width: 10%;">FECHA</th>
                     <th  style="border:1px solid black; width: 3%;">CANT</th>
-                    <th  style="border:1px solid black; width: 5%;">NO. CLEINTE</th>
+                    <th  style="border:1px solid black; width: 5%;">NO. CLIENTE</th>
                     <th  style="border:1px solid black; width: 5%;">CLAVE</th>
-                    <th  style="border:1px solid black; width: 17%;">N.P</th>
+                    <th  style="border:1px solid black; width: 17%;">PRODUCTO</th>
                     <th  style="border:1px solid black; width: 10%;">O.P</th>
                     <th  style="border:1px solid black; width: 25%;">CLIENTE</th>
                     <th  style="border:1px solid black; width: 5%;">P/U</th>
-                    <th  style="border:1px solid black; width: 5%;">PESO</th>
+                    <th  style="border:1px solid black; width: 5%;">PESO TOTAL</th>
                     <th  style="border:1px solid black; width: 10%;">ESTADO</th>
                     <th  style="border:1px solid black; width: 5%;">P/V U</th>
                     <th  style="border:1px solid black; width: 10%;">IMPORTE</th>
