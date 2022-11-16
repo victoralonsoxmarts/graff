@@ -21,8 +21,8 @@ class ReportMrp(models.TransientModel):
     def create_mrp_report(self):
         for rec in self:
             mrp_eli = self.env['reports.mrp'].search([('id','>',0)]).unlink()
-            mrp = self.env['mrp.production'].search([('date_planned_start', '>=', rec.date_star),
-                                                        ('date_planned_start', '<=', rec.date_end),
+            mrp = self.env['mrp.production'].search([('date_finished', '>=', rec.date_star),
+                                                        ('date_finished', '<=', rec.date_end),
                                                         ('state', '<=', 'done')])
 
             datas = [] 
@@ -31,7 +31,7 @@ class ReportMrp(models.TransientModel):
                     sale = self.env['sale.order.line'].search([('order_id', '=', m.sale_id.id),('product_id', '=', m.product_id.id)],limit=1)
                     print("++++++++++++",sale)
                     datas.append({
-                        'date': m.date_planned_start,
+                        'date': m.date_finished,
                         'cantidad': m.product_qty,
                         'no_client': m.res_partner_id.ref,
                         'clave': m.product_id.default_code,
