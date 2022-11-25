@@ -29,18 +29,18 @@ class ReportMrp(models.TransientModel):
             if mrp:
                 for m in mrp:
                     if m.producto_reporte_id:
-                        sale = self.env['sale.order.line'].search([('order_id', '=', m.sale_id.id),('product_id', '=', m.product_id.id)],limit=1)
+                        sale = self.env['sale.order.line'].search([('order_id', '=', m.sale_id.id),('product_id', '=', m.producto_reporte_id.id)],limit=1)
                         print("++++++++++++",sale)
                         datas.append({
                             'date': m.date_finished,
                             'cantidad': m.product_qty,
                             'no_client': m.res_partner_id.ref,
-                            'clave': m.producto_reporte_id.default_code,
-                            'product_id': m.producto_reporte_id.id,
+                            'clave': m.product_id.default_code,
+                            'product_id': m.product_id.id,
                             'op_id': m.id,
                             'res_partner_id': m.res_partner_id.id,
-                            'pesouni': m.producto_reporte_id.weight,
-                            'peso': m.producto_reporte_id.weight * m.product_qty,
+                            'pesouni': m.product_id.weight,
+                            'peso': m.product_id.weight * m.product_qty,
                             'estado': 'TERMINADO',
                             'pv': sale.price_unit if sale else 0,
                             'importe': sale.price_unit * m.product_qty if sale else 0,     
