@@ -12,3 +12,15 @@ class MrpProduction(models.Model):
         'sale.order',
         string='Venta',
     )
+
+    producto_reporte_id = fields.Many2one(
+        'product.product', 'Product',
+        domain="""[
+            ('type', 'in', ['product', 'consu']),
+            '|',
+                ('company_id', '=', False),
+                ('company_id', '=', company_id)
+        ]
+        """,
+        check_company=True,
+    )

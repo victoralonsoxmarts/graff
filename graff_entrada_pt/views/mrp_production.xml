@@ -8,6 +8,7 @@
             <xpath expr="//field[@name='user_id']" position="after">
                 <field name="res_partner_id"/>
                 <field name="sale_id"/>
+                <field name="producto_reporte_id"/>
             </xpath>
         </field>
     </record>
