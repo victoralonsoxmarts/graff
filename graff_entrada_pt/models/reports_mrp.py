@@ -31,9 +31,11 @@ class ReportsMrp(models.Model):
         'res.partner',
         string='Cliente',
     )
+    
     pesouni = fields.Float(
         string='P/U',
     )
+    
     peso = fields.Float(
         string='Peso',
     )
@@ -42,6 +44,13 @@ class ReportsMrp(models.Model):
     )
     pv = fields.Float(
         string='P/V U',
+    )
+    pvmx = fields.Float(
+        string='P/U mx',
+    )
+    currency_id = fields.Many2one(
+        'res.currency',
+        string='Moneda',
     )
     importe = fields.Float(
         string='Importe',
