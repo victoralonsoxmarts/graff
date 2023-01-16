@@ -16,8 +16,9 @@
                     <field name="peso" />  
                     <field name="estado" />
                     <field name="pv" />
-                    <field name="pvmx"/>
                     <field name="currency_id"/>
+                    <field name="tc"/>
+                    <field name="pvmx"/> 
                     <field name="importe" sum="importe"/>
                 </tree>
             </field>
