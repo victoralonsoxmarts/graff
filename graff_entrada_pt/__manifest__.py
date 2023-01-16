@@ -10,7 +10,7 @@
     """,
 
     'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'website': "tuodoo.com",
     'category': 'Uncategorized',
     'version': '14.1',
     'depends': ['mrp'],
