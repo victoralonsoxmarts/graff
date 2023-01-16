@@ -10,9 +10,9 @@
     """,
 
     'author': "My Company",
-    'website': "tuodoo.com",
+    'website': "http://www.yourcompany.com",
     'category': 'Uncategorized',
-    'version': '14.2',
+    'version': '14.1',
     'depends': ['mrp'],
     'data': [
         'security/ir.model.access.csv',
