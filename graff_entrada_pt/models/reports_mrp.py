@@ -52,8 +52,11 @@ class ReportsMrp(models.Model):
         'res.currency',
         string='Moneda',
     )
+    tc = fields.Float(
+        string='T.C.',
+    )
     importe = fields.Float(
-        string='Importe',
+        string='Importe MX',
     )
 
     date_star = fields.Date(
