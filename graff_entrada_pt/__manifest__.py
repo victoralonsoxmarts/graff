@@ -12,7 +12,7 @@
     'author': "My Company",
     'website': "tuodoo.com",
     'category': 'Uncategorized',
-    'version': '14.1',
+    'version': '14.2',
     'depends': ['mrp'],
     'data': [
         'security/ir.model.access.csv',
